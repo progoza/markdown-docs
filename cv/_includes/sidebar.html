@@ -1,0 +1,10 @@
+<div class="sidebar">
+  <div class="container sidebar-nav">
+    {% assign navigation_pages = site.pages %}
+    {% for p in navigation_pages %}
+      {% if p.sidebar %}
+           {{ p.content | markdownify }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
