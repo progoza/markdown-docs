@@ -1,0 +1,20 @@
+# Setup
+title:            CS4kids
+tagline:          'Nauka programowania dla dzieci'
+description:      'Podstawy programowania z użyciem c# - przygotowane dla dzieci w wieku ~ 12-14 lat'
+url:              https://progoza.github.io
+baseurl:          '/cs4kids'
+paginate:         5
+
+# About and contact
+author:
+  name:           'Pawel Rogoza'
+  url:            https://progoza.github.io/cv
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+# Custom vars
+version:          3.0.0
