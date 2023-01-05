@@ -1,14 +1,10 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
+  <div class="container sidebar-nav">
       <h1>
-        <a href="{{ site.baseurl }}">
           {{ site.title }}
-        </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
-    </div>
-
+      <p>{{ site.description }}</p>
+    <hr></hr>
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
@@ -25,10 +21,8 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
-
-    <p>Built with jekyll & customized Hyde theme.</p>
+    <hr></hr>
+    <p>Built with jekyll and customized Hyde theme.</p>
   </div>
 </div>
