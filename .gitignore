@@ -1,3 +1,3 @@
-_build/
-_output/
+.build/
+.output/
 .obsidian/
