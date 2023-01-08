@@ -9,6 +9,6 @@
 
 # markdown-docs
 
-This repository is my main Obsidian Vault wit various notes made in markdown.
+This repository is my main Obsidian Vault with various notes made in markdown.
 
 All materials stored on this repo are licensed with free and open source [MIT license](LICENSE)
