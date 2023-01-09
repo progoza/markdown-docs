@@ -184,7 +184,7 @@ W jednej linijce możemy stworzyć kilka zmiennych, oddzielając je przecinkiem 
 
 `int licznikPunktow = 0, liczbaZyc=3;`
 
-**Drugi sposób: użycie słówka** **var** **:**
+**Drugi sposób: użycie słówka var**:
 
 - najpierw używamy słówko var (od ang. variable, czyli zmienna),
 - po spacji wpisujemy nazwę zmiennej,

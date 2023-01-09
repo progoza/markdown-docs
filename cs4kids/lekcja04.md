@@ -12,7 +12,7 @@ Podczas pisania programów często występuje potrzeba wykonywania wielokrotnie 
 
 	Funkcje to bardzo istotny element w sztuce programowania. Warto spędzić trochę czasu, żeby je poznać i zrozumieć, a przede wszystkim - poćwiczyć ich pisanie.
 
-## Czym jest funkcja w języku C# i z czego składa się funkcja?
+## Czym jest funkcja w języku C# i z czego się składa?
 
 Żeby umożliwić programistom pisanie programów bez zbędnych powtórzeń fragmentów kodu, wpowadzono funkcje. W języku C# można je również nazywać metodami. Metoda to fragment kodu (zwany też "blokiem kodu"), który można uruchomić ("wywołać") z innego miejsca naszego programu. Funkcje:
 
@@ -101,9 +101,6 @@ var wynikRzwczywisty = Dodaj(1.25, 2.0); // tutaj kompilator wybierze wersję 2.
 
 Uwaga: jeżeli 2 funkcje mają takie same nazwy to muszą się różnić listą parametrów, rożnica zwracanego typu nie ma znaczenia.
 
-## Przykłady, przykłady
-
-TBD
 
 ## "Czysty kod"
 
@@ -132,6 +129,150 @@ var wynikFunkcji = Dodaj(1, 2);
 var wynikOperatora = 1 + 2; // zadziała tak samo, operator "+" to po prostu 
 							// inaczej zapisana funkcja dodawania :-)
 ```
+
+
+## Przykłady, przykłady
+
+Na początek stwórzmy funkcję, która sprawdza czy podany rok jest przystępny. Wywołajmy tę funkcje dla lat 2000 i 2023 - w zależności od wyniku napiszemy czy rok jest przestępny czy nie i pdpamy ile ma dni.
+
+```csharp
+bool CzyRokJestPrzestepny(int rok)
+{
+	if (rok % 1000 == 0) 
+	{
+		return true; // jeśli rok dzieli się przez 1000 to jest przestepny
+	}
+	else if (rok % 100 == 0)
+	{
+		return false; // jeśli rok nie dzieli się przez 1000 ale dzieli się 
+					// przez 100 - nie jest przesteny
+	}
+	else if (rok % 4 == 0)
+	{
+		return true; // jeśli rok nie dzieli się przez 100 ale dzieli się 
+					// przez 4 to jest przestepny
+	}
+	return false; // W każdym przeciwnym przypadku (czyli jeśli rok nie dzieli 
+				// się przez 4) - rok nie jest przestępny
+}
+
+if (CzyRokJestPrzestepny(2000))
+{
+	Console.WriteLine("Rok 2000 jest przestępny i ma 366 dni");
+}
+else
+{
+	Console.WriteLine("Rok 2000 nie jest przestępny i ma 365 dni");
+}
+
+if (CzyRokJestPrzestepny(2023))
+{
+	Console.WriteLine("Rok 2023 jest przestępny i ma 366 dni");
+}
+else
+{
+	Console.WriteLine("Rok 2023 nie jest przestępny i ma 365 dni");
+}
+```
+
+Ok, uruchom ten program - w wyniku otrzymamy:
+
+```
+Rok 2000 jest przestępny i ma 366 dni
+Rok 2023 nie jest przestępny i ma 365 dni
+```
+
+Niby wszystko się zgadza, ale kod nie jest zbyt... czysty. Widzimy, że część instrukcji w nim się powtarza... Spróbujmy pomyśleć czy nie dałoby się tego jakoś poprawić..
+
+```csharp
+bool CzyRokJestPrzestepny(int rok)
+{
+	if (rok % 1000 == 0) 
+	{
+		return true; // jeśli rok dzieli się przez 1000 to jest przestepny
+	}
+	else if (rok % 100 == 0)
+	{
+		return false; // jeśli rok nie dzieli się przez 1000 ale dzieli się 
+					// przez 100 - nie jest przesteny
+	}
+	else if (rok % 4 == 0)
+	{
+		return true; // jeśli rok nie dzieli się przez 100 ale dzieli się 
+					// przez 4 to jest przestepny
+	}
+	return false; // W każdym przeciwnym przypadku (czyli jeśli rok nie dzieli 
+				// się przez 4) - rok nie jest przestępny
+}
+
+void NapiszCzyRokJestPrzystepnyIIleMaDni(int rok)
+{
+    if (CzyRokJestPrzestepny(rok)) 
+    {
+        Console.WriteLine("Rok "+rok+" jest przestępny i ma 366 dni");
+    }
+    else
+    {
+        Console.WriteLine("Rok "+rok+" nie jest przestępny i ma 365 dni");
+    }
+}
+
+NapiszCzyRokJestPrzystepnyIIleMaDni(2000);
+NapiszCzyRokJestPrzystepnyIIleMaDni(2023);
+```
+
+Teraz dużo lepiej 😊.  Stworzyliśmy drugą funkcję, która zawiera kod, który był powielony. Teraz możemy wywoływać go wielokrotnie dla wybranego roku.
+
+Jeśli bylibyśmy bardzo dociekliwi, doszlibyśmy do wniosku, że można ten kod jeszcze trochę  "oczyścić": teraz funkcja `NapiszCzyRokJestPrzystepnyIIleMaDni` zajmuje się nie tylko wypisaniem użytkownikowi informacji, ale rónież określa ile przestępny rok ma dni. JEśłi chcielibyśmy być całkowicie zgodni z zasadami czystego kodu (żeby każda funkcja robiła tylko jedną rzecz) - możemy zmienić ten kod na przykłąd w taki sposób:
+
+```csharp
+bool CzyRokJestPrzestepny(int rok)
+{
+	if (rok % 1000 == 0) 
+	{
+		return true; // jeśli rok dzieli się przez 1000 to jest przestepny
+	}
+	else if (rok % 100 == 0)
+	{
+		return false; // jeśli rok nie dzieli się przez 1000 ale dzieli się 
+					// przez 100 - nie jest przesteny
+	}
+	else if (rok % 4 == 0)
+	{
+		return true; // jeśli rok nie dzieli się przez 100 ale dzieli się 
+					// przez 4 to jest przestepny
+	}
+	return false; // W każdym przeciwnym przypadku (czyli jeśli rok nie dzieli 
+				// się przez 4) - rok nie jest przestępny
+}
+
+int IleDniMaRok(int rok)
+{
+    if (CzyRokJestPrzestepny(rok))
+    {
+        return 366;
+    }
+    return 365;
+}
+
+void NapiszCzyRokJestPRzystepnyIIleMaDni(int rok)
+{
+    var ileDniMaRok = IleDniMaRok(rok);
+    if (CzyRokJestPrzestepny(rok)) 
+    {
+        Console.WriteLine("Rok " + rok + " jest przestępny i ma " + ileDniMaRok + " dni");
+    }
+    else
+    {
+        Console.WriteLine("Rok " + rok + " nie jest przestępny i ma " + ileDniMaRok + " dni");
+    }
+}
+
+NapiszCzyRokJestPRzystepnyIIleMaDni(2000);
+NapiszCzyRokJestPRzystepnyIIleMaDni(2023);
+```
+
+Zrobiliśmy kolejną metodę (funkcję) - `IleDniMaRok`. Teraz to oka określa liczbę dni w roku. Natomiast funkcja "NapiszCzyRokJestPRzystepnyIIleMaDni" - rzeczywiście teraz zajmuje się tylko drukowaniem informacji użytkownikowi.
 
 ## Zadanie
 

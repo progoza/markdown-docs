@@ -1,4 +1,9 @@
-# Lekcja 7 Napisy czyli typ string
+---
+layout: page
+title: Lekcja 7
+---
+
+# Napisy czyli typ string
 
 - łączenie napisów
 
@@ -10,3 +15,4 @@
 
 - formatowanie stringów
 
+TBD
