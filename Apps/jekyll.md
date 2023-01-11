@@ -1,3 +1,5 @@
+# Jekyll
+
 Jekyll  is an app that generates a static html from markdown. There is a lot of free/open source themes for jekyll. 
 
 ## Install jekyll
@@ -13,7 +15,7 @@ Jekyll can also render PDFs.
 
 ## Using jekyll with in obsidian vault
 
-For some articles in my obsidian vault I prepared scripts that render static html using jekyll.
+For some articles in my Obsidian Vault I prepared scripts that render static html using jekyll.
 
 There are 2 flavours: `build.sh` for Linux and `build.cmd` for Windows.
 These scripts copy the template from `_template` directory and selected articles from Obsidian vault into `_build` dir; next they generate the  html into `_output`.
