@@ -20,7 +20,7 @@ Or do both at once, the "functional" way:
 ```csharp
 var engineMock = Mock.Of<IEngine>(l =>
 			l.IsOilOk() == false &&
-			l.GetRevsPerMin() == 5000;
+			l.GetRevsPerMin() == 5000
 );
 ```
 

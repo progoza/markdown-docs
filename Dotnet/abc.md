@@ -1,0 +1,4 @@
+- CLR - Common Language Runtime
+- CIL  - Common Intermediate Language / MSIL - Microsoft Intermediate Language / IL - Intermediate Language
+- JIT - Just in TIme compilation ()
+- POCO - Plain Old CLR Objects (equivalent to POJO in Java)
