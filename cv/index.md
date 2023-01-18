@@ -22,8 +22,7 @@ I am a professional software engineer experienced in backend development and agi
 
 ### Tools:
 
- - Gitlab,
- - JIRA,
+ - Gitlab, JIRA,
  - Visual Studio / VS Code,
  - Postman / SOAP UI.
 
