@@ -8,7 +8,7 @@ I am a professional software engineer experienced in backend development and agi
 ### Currently busy with:
 
 - Working with **agile requirements** (identification, clarification, breakdown, documenting and prioritizing), translating requirements between business- and technical stakeholders,
-- Designing **REST APIs** for complex applications in banking business,
+- Designing **REST APIs** for complex applications in banking domain,
 - Backend Programming in **C# / .NET 6**,
 - Automating **APIs tests**,
 - Using Azure fundamental features,
@@ -36,7 +36,7 @@ I am a professional software engineer experienced in backend development and agi
 
 #### 2018 - onwards:  UBS Business Solutions Poland 
 
-- **GSS** - application used by bankers to build _book of demand_ for new bond issues on primary market. Technology stack: C# (.NET Framework client and .NET 6.0 backend), Sybase ASE, Kafka). Role: Technical Business Analyst and backend developer.
+- **GSS** - application used by bankers to build _book of demand_ for bond issues on primary market. Technology stack: C# (.NET Framework client and .NET 6.0 backend), Sybase ASE, Kafka. Role: Technical Business Analyst and backend developer.
 
 - **Primary Monitor** - progressive web application built from scratch, used by Investement Bank clients to observe/monitor the process of collecting the orders for new bonds issues on primary market. Tech stack: React, Java, Oracle DB. Role: Technical Business Analyst.  
 
