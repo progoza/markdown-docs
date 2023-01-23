@@ -11,7 +11,6 @@ I am a professional software engineer experienced in backend development and agi
 - Designing **REST APIs** for complex applications in banking domain,
 - Backend Programming in **C# / .NET 6**,
 - Automating **APIs tests**,
-- Using Azure fundamental features,
 - Doing basic SQL,
 - Managing Agile Engineering Chapter.
 
@@ -24,7 +23,8 @@ I am a professional software engineer experienced in backend development and agi
 
  - Gitlab, JIRA,
  - Visual Studio / VS Code,
- - Postman / SOAP UI.
+ - Postman / SOAP UI,
+ - Azure fundamentals.
 
 ### Skills and tools used in the past:
 
@@ -36,17 +36,17 @@ I am a professional software engineer experienced in backend development and agi
 
 #### 2018 - onwards:  UBS Business Solutions Poland 
 
-- **GSS** - application used by bankers to build _book of demand_ for bond issues on primary market. Technology stack: C# (.NET Framework client and .NET 6.0 backend), Sybase ASE, Kafka. Role: Technical Business Analyst and backend developer.
+- **GSS** - application used by bankers to build _book of demand_ for bond issues on primary market. Technology stack: C# (.NET Framework client and .NET 6.0 backend), Sybase ASE, Kafka, FIX protocol. Role: Technical Business Analyst and backend developer.
 
-- **Primary Monitor** - progressive web application built from scratch, used by Investement Bank clients to observe/monitor the process of collecting the orders for new bonds issues on primary market. Tech stack: React, Java, Oracle DB. Role: Technical Business Analyst.  
+- **Primary Monitor** - progressive web application built from scratch, used by Investment Bank clients to observe/monitor the process of collecting the orders for bonds issues on primary market. Tech stack: React, Java, Oracle DB. Role: Technical Business Analyst.  
 
 #### 2015 - 2018:  UNIT4 Polska
 
-- **API Framework** - set of support libraries for REST APIs development for UNIT4 ERP application environment. Tech stack: C#/.NET Framework, WPF. Role: Technical Business Analyst (aka. Principal Product Manager) 
+- **API Framework** - set of support libraries for REST APIs development for UNIT4 ERP application environment. Tech stack: C#/.NET Framework, WPF. Role: Technical Business Analyst (aka. Principal Product Manager).
 
-- **Identity Services** - set of services used for federated authentication with use of OpenID Connect protocol. Tech stack: C#, .NET framework. Role: Technical Business Analyst and C# developer.
+- **Identity Services** - set of services used for federated authentication with use of OpenID Connect protocol. Tech stack: C#, .NET framework, SQL Server. Role: Technical Business Analyst and C# developer.
 
-- **Student Management** - architectual modernization of platform used by application for colleges and universities (acquired by UNIT4 from US-based company). Technical Business Analyst (aka. Principal Product Manager)
+- **Student Management** - architectural modernization of platform for colleges and universities (system acquired by UNIT4 from US-based company). Technical Business Analyst (aka. Principal Product Manager).
 
 #### 2004 - 2015:  REDKNEE Poland (former Nokia Siemens Networks) 
 

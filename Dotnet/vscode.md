@@ -46,4 +46,22 @@ dotnet add Application.Test package Moq --version 4.18.4
 11. Open "Testing" perspective to run tests.
 
 
+## Keybindings
+
+| key binding | action |
+| ------------- | ----- |
+| ctrl-l | mark the whole line, move cursor to next line |
+| ctrl+/ | toggle comment for all marked lines (or current line if none selected) |
+| ctrl+shift+up ctrl+shift+down | duplicate line |
+| alt+up <br/> alt+down | move the selection (or current line) up/down |
+| ctlr+alt+up <br/> ctlr+alt+down | add cursor above / below |
+| ctrl+up <br/> ctrl+down | scroll file |
+| ctrl+shift+p <br/>or F1 | Show all commands |
+| ctrl+p | quick open |
+| ctrl+d | press it multiple times, to select n occurences of word and then replace them all (so called multi-replace cursor) |
+| ctrl+g | go to line number.. |
+
+
+
+Visual Studio has different keybinding than VSCode, but they can easily be changed: ` Tools -> Options -> Environment -> Keyboard` and then select scheme "Visual Studio Code".
 
