@@ -18,7 +18,7 @@ A great video showing the archinstall script features is on DT channel: https://
 
 After installing the distro and booting into the system there is a few thigs to do.
 
-1. Checkout my dotfiles repo (in `~/workdir/` directory, as a bare repo)
+1. Checkout my dotfiles repo (in `~/src/` directory, as a bare repo)
 2. Import my gpg key:
 
 ```
