@@ -7,7 +7,7 @@ Install:
  - libvirt
  - dnsmasq
 
-## Start libviert service:
+## Start libvirt service:
 
 ```
 sudo systemctl enable libvirtd.service
