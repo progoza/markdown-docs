@@ -23,15 +23,17 @@ iwctl
 [iwd]# station wlan0 connect SSID
 ```
 
-iwl will prompt for password and configure the IP using DHCP.
+`iwl` will prompt for password and configure the IP using DHCP.
 
 ### additional packages
 
 In archinstall you can add additional packages to install, I suggest installing:
 
 ```
-vim git firefox gnupg mc
+gvim git firefox gnupg mc
 ```
+
+Configure the network setting (to copy them from installation ISO).
 
 After installing the distro and booting into the system there is a few thigs to do.
 
@@ -67,5 +69,5 @@ makepkg -si
 ```
 cd; cd distro-config/arch
 sudo pacman -S $(cat packages-pacman.txt)
-sudo yay -S $(cat packages-yay.txt)
+yay -S $(cat packages-yay.txt)
 ```
