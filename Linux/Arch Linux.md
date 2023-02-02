@@ -45,6 +45,7 @@ git clone git@github.com:progoza/LinuxDotFiles.git
 alias config='/usr/bin/git --git-dir=$HOME/src/LinuxDotFiles.git/ --work-tree=$HOME'
 config checkout main
 config pull
+config config --local status.showUntrackedFiles no
 ```
 
 3. Import my gpg key:
