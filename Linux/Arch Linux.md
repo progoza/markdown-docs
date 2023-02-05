@@ -16,7 +16,7 @@ Although I like Arch, not necessairly I'm a fan of spendng hours to install it. 
 
 A great video showing the archinstall script features is on DT channel: https://www.youtube.com/watch?v=leQbSsu-7F4&t=969s 
 
-Before running archinstall wireless network needs to be configured. Easiest way is to use `iwl`:
+Before running archinstall wireless network needs to be configured. Easiest way is to use iwl:
 
 ```
 iwctl
@@ -25,7 +25,15 @@ iwctl
 
 `iwl` will prompt for password and configure the IP using DHCP.
 
-### additional packages
+### Not use WirePlumber
+
+Use pipewire-media-session instead of WirePlumber. Although WirePlumber is newer solution it maes audio playback laggy on my PC. In case the video/audio playback is not smooth:
+
+```
+sudo pacman -Syu pipewire-media-session
+```
+
+### Additional packages
 
 In archinstall you can add additional packages to install, I suggest installing:
 
