@@ -7,10 +7,10 @@ I am a professional software engineer experienced in backend development and agi
 
 ### Currently busy with:
 
-- Working with **agile requirements** (identification, clarification, breakdown, documenting and prioritizing), translating requirements between business- and technical stakeholders,
 - Designing **REST APIs** for complex applications in banking domain,
 - Backend Programming in **C# / .NET 6**,
-- Automating **APIs tests**,
+- Working with **agile requirements** (identification, clarification, breakdown, documenting and prioritizing), translating requirements between business- and technical stakeholders,
+- Automating **APIs tests** and performance tests,
 - Doing basic SQL,
 - Managing Agile Engineering Chapter.
 
@@ -23,7 +23,7 @@ I am a professional software engineer experienced in backend development and agi
 
  - Gitlab, JIRA,
  - Visual Studio / VS Code,
- - Postman / SOAP UI,
+ - Postman / SOAP UI / JMeter,
  - Azure fundamentals.
 
 ### Skills and tools used in the past:
@@ -67,6 +67,7 @@ Title of qualification awarded: Engineer and Master of Science.<br/>
 
 #### Trainings:
 
+- 2020: Core Leadership Program
 - 2015: Developing Agile Requirements by MT&DC
 - 2012: Java Standard Edition 6 Programmer Certified Professional Exam by Oracle
 - 2011: CAMEL Phase 4 Signaling Protocol by NSN Academy
@@ -81,7 +82,7 @@ Title of qualification awarded: Engineer and Master of Science.<br/>
 
 ### Hobby:
 
+ - Amateur sports: road bike, swimming, running,
  - Economy,
  - Civil aviation,
- - Linux distro hopping,
  - Working on my garden.
