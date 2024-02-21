@@ -7,7 +7,7 @@ This is the way how I  bulk-resize the pictures from the phone:
 3. On PC, go to the directory where the pictures were copied and run:
 
 ```
-find . -iname "*.JPG" -exec convert -resize 50% {} \;
+find . -iname "*.JPG" -exec mogrify -resize 50% {} \;
 ```
 
 Note: The **convert** program is a member of the [imagemagick](https://linux.die.net/man/1/imagemagick) suite of tools.

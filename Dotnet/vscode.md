@@ -2,7 +2,7 @@
 
 VS Code is much more lightweight IDE compared to VS. 
 It can be configured as IDE for many programming languages; for C# it works great with cross-platform .NET development (e.g. dotnet 7.0).
-Unfortunately only core of VS Code is FOSS (Free and Open Source Software), full VS Code distribution is propriatary 😟 
+Unfortunately only core of VS Code is FOSS (Free and Open Source Software), full VS Code distribution is propriatary. 
 
 ## Configure VS Code
 
@@ -22,7 +22,7 @@ sudo apt-get install -y dotnet-sdk-7.0
 4. Run VS Code, hit F1 to run Command Palette, run "WSL:  New WSL Window" 
 5. Install C# extension (C# for Visual Studio Code (powered by OmniSharp).)
 6. Install ".NET Core Test Explorer" extension
-7. Obviously, install Dracula Theme extension 😊
+7. Obviously, install Dracula Theme extension
 8. Open a directory in VS Code explorer
 9. In Terminal:
 
@@ -44,6 +44,31 @@ dotnet add Application.Test package Moq --version 4.18.4
 9. VS Code needs to add config required to run and debug the application (they will be added to `.vscode` directory). C# extension can do this - when C# project will be open, a prompt will show up ("Required assets to build and debug are missing..") - click yes.
 10. All done, switch to "Run and Debug" (Ctrl-Shift-D), set some breakpoint, etc.
 11. Open "Testing" perspective to run tests.
+
+## Using VS code from flatpak
+
+On Linux I prefer using VS code from flatpak package.
+After installing the VS Code, it is necessary to install proper SDK library from flatpak repo also, e.g.:
+
+```
+flatpak install org.freedesktop.Sdk.Extension.dotnet7
+```
+
+Next, we need to configure VS Code flatpak sandbox, so that VS Code will "see" the installed SDK. For that matter the Flatseal app can be used. Install flatseal:
+
+```
+flatpak install flathub com.github.tchx84.Flatseal
+```
+
+Run it:
+
+```
+flatpak run com.github.tchx84.Flatseal
+```
+
+And configure the variable `FLATPAK_ENABLE_SDK_EXT=dotnet7` :
+
+![](./img/flatseal.png)
 
 
 ## Keybindings

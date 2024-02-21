@@ -8,7 +8,7 @@ There is a few reasons why I like Arch Linux. First of all I like that it does n
 Second reason is AUR (Arch User Repository) where you cna actually find any piece of Linux software you might need (obviously you don't need to use actuall Arch Linux to use AUR, Manjaro and many Arch-deriverates are compatible with that as well).
 Finally I like Arch becuase ... I am an ethusiast. Indeed Arch probably is not the perfect ditro for everybody (in particular - new to Linux).
 
-BTW: Arch is not the only distro I use. I also use Debian (for server installations), Linux Mint / Ubuntu... 
+BTW: Arch is not the only distro I use. I also use Debian (for server installations), Linux Mint / Ubuntu.
 
 ## archinstall
 
@@ -25,9 +25,9 @@ iwctl
 
 `iwl` will prompt for password and configure the IP using DHCP.
 
-### Not use WirePlumber
+-- not needed any more ### Not use WirePlumber
 
-Use pipewire-media-session instead of WirePlumber. Although WirePlumber is newer solution it maes audio playback laggy on my PC. In case the video/audio playback is not smooth:
+Use pipewire-media-session instead of WirePlumber. Although WirePlumber is newer solution it makes audio playback laggy on my PC. In case the video/audio playback is not smooth:
 
 ```
 sudo pacman -Syu pipewire-media-session
@@ -49,7 +49,7 @@ After installing the distro and booting into the system there is a few thigs to 
 
 ```shell
 cd; mkdir src; cd src
-git clone git@github.com:progoza/LinuxDotFiles.git
+git clone --bare git@github.com:progoza/LinuxDotFiles.git
 alias config='/usr/bin/git --git-dir=$HOME/src/LinuxDotFiles.git/ --work-tree=$HOME'
 config checkout main
 config pull
@@ -75,8 +75,14 @@ makepkg -si
 
 5. Install the packages using scripts in  ~/distro-config/ directory
 
-```
+```shell
 cd; cd distro-config/arch
 sudo pacman -S $(cat packages-pacman.txt)
 yay -S $(cat packages-yay.txt)
+```
+
+6. Add user to video group
+
+```shell
+sudo usermod -a G video pawel
 ```

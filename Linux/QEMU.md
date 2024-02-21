@@ -59,4 +59,18 @@ Next, shut down the VM and:
  - change video driver to 'virtio' wih 3d acceleration, additionally to make 3d accelearation work in "Display spice", the "Listen type" option needs to be set to none and "OpenGL" option checked.
  - change processor topology, by default virt-manager simulates n sockets, but consumer wndows (home, pro) support only up to 2 sockets. Therefore it is better to set socet to 1 and bump up the cores number instead.
 
+## Creating bridged vetwork (to avoid NAT-ting)
 
+First create a bridge:
+
+```shell
+sudo ip link add br0 type bridge
+```
+
+to verify if ir was created successfully, we can run:
+
+```shell
+sudo ip link show type bridge
+```
+
+Next, a physical ethernet needs to be added to the bridge. But it cannot be the main ethernet interface (otherwise connectivity will be lost)
