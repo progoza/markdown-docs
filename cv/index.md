@@ -11,7 +11,7 @@ I am a professional software engineer experienced in backend development and agi
 - Backend Programming in **C# / .NET 6**,
 - Working with **agile requirements** (identification, clarification, breakdown, documenting and prioritizing), translating requirements between business- and technical stakeholders,
 - Automating **APIs tests** and performance tests,
-- Doing basic SQL,
+- Working with SQL DBs,
 - Managing Agile Engineering Chapter.
 
 ### Operating systems:
@@ -36,17 +36,17 @@ I am a professional software engineer experienced in backend development and agi
 
 #### 2018 - onwards:  UBS Business Solutions Poland 
 
-- **GSS** - application used by bankers to build _book of demand_ for bond issues on primary market. Technology stack: C# (.NET Framework client and .NET 6.0 backend), Sybase ASE, Kafka, FIX protocol. Role: Technical Business Analyst and backend developer.
+- **GSS** - application used by bankers to build _book of demand_ for bond issues on primary market. Technology stack: mixed C# (.NET Framework client and .NET 6.0 backend) and Java (depending on component), Sybase ASE, Kafka, FIX protocol. Role: backend developer.
 
-- **Primary Monitor** - progressive web application built from scratch, used by Investment Bank clients to observe/monitor the process of collecting the orders for bonds issues on primary market. Tech stack: React, Java, Oracle DB. Role: Technical Business Analyst.  
+- **Primary Monitor** - progressive web application built from scratch, used by Investment Bank clients to observe/monitor the process of collecting the orders for bonds issues on primary market. Tech stack: React, Java, Oracle DB. Role: Technical Business Analyst.
 
 #### 2015 - 2018:  UNIT4 Polska
 
-- **API Framework** - set of support libraries for REST APIs development for UNIT4 ERP application environment. Tech stack: C#/.NET Framework, WPF. Role: Technical Business Analyst (aka. Principal Product Manager).
+- **API Framework** - set of support libraries for REST APIs development for UNIT4 ERP application environment. Tech stack: C#/.NET Framework, WPF. Role: Technical Business Analyst and developer.
 
-- **Identity Services** - set of services used for federated authentication with use of OpenID Connect protocol. Tech stack: C#, .NET framework, SQL Server. Role: Technical Business Analyst and C# developer.
+- **Identity Services** - set of services used for federated authentication with use of OpenID Connect protocol. Tech stack: C#, .NET framework, SQL Server. Role: Technical Business Analyst and developer.
 
-- **Student Management** - architectural modernization of platform for colleges and universities (system acquired by UNIT4 from US-based company). Technical Business Analyst (aka. Principal Product Manager).
+- **Student Management** - architectural modernization of platform for colleges and universities (system acquired by UNIT4 from US-based company). Technical Business Analyst and developer.
 
 #### 2004 - 2015:  REDKNEE Poland (former Nokia Siemens Networks) 
 
@@ -54,7 +54,7 @@ I am a professional software engineer experienced in backend development and agi
 
 - **Application Server** for ngIN services - Tech stack: Java on top of Rhino/JAINSLEE platform. Role: Java Developer.
 
-- **Customization team** - multiple projects for international customers - mobile networks operators. Customizing services on SS7 Intelligent Network component - pre-paid charging systems. Tech stack: Java on top of custom Siemens/NSN platform. Role: Java Developer. 
+- **Customization team** - multiple projects for international customers - mobile networks operators. Customizing services on SS7 Intelligent Network component - pre-paid charging systems. Tech stack: Java on top of custom Siemens/NSN platform. Role: Java Developer.
 
 ### Education:
 
@@ -67,6 +67,7 @@ Title of qualification awarded: Engineer and Master of Science.<br/>
 
 #### Trainings:
 
+- 2023-onwards: UBS Certified Enigineer learning path
 - 2020: Core Leadership Program
 - 2015: Developing Agile Requirements by MT&DC
 - 2012: Java Standard Edition 6 Programmer Certified Professional Exam by Oracle
